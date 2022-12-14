@@ -7,9 +7,16 @@ import { NotificationsRepository } from '../../src/application/repositories/noti
 export class InMemoryNotificationsRepository
   implements NotificationsRepository
 {
-  public notifications: NotificationProps[] = [];
-
   async create(notification: Notification) {
     this.notifications.push(notification);
   }
+
+  findById(notificationId: string): Promise<Notification | null> {
+    throw new Error('Method not implemented.');
+  }
+
+  save(notification: Notification): Promise<void> {
+    throw new Error('Method not implemented.');
+  }
+  public notifications: NotificationProps[] = [];
 }
