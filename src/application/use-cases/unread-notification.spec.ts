@@ -1,9 +1,6 @@
-import { Content } from '@application/entities/content';
-import { Notification } from '@application/entities/notification';
 import { makeNotification } from '@test/factories/notification-factory';
 import { InMemoryNotificationsRepository } from '@test/repository/in-memory-notifications-repository';
 import { NotificationNotFound } from './errors/notification-not-found';
-import { ReadNotification } from './read.notification';
 import { UnreadNotification } from './unread-notification';
 
 describe('Unread notification', () => {
