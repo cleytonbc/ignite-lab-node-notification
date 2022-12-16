@@ -54,7 +54,7 @@ export class Notification {
   public read() {
     this.props.readAt = new Date();
   }
-  public unRead() {
+  public unread() {
     this.props.readAt = null;
   }
 
