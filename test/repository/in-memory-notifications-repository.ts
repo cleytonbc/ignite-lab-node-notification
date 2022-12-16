@@ -1,7 +1,5 @@
 import { Notification } from '@application/entities/notification';
 import { NotificationsRepository } from '@application/repositories/notifications-repository';
-import { ConsoleLogger } from '@nestjs/common';
-import { Console } from 'console';
 
 export class InMemoryNotificationsRepository
   implements NotificationsRepository
